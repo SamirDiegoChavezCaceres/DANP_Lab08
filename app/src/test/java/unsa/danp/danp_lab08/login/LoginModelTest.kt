@@ -25,7 +25,7 @@ class LoginFormTest {
     fun setUp() {
         // Mock the static Toast.makeText() method
         mockkStatic(Toast::class)
-        every { Toast.makeText(any(), anyString(), anyInt()) } returns mockk()
+//        every { Toast.makeText(any(), anyString(), anyInt()) } returns mockk()
     }
 
     @After

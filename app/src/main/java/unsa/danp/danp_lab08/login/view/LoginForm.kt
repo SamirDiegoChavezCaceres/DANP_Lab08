@@ -1,6 +1,7 @@
 package unsa.danp.danp_lab08.login.view
 
 import android.content.Context
+import android.util.Log
 import android.widget.Toast
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -71,10 +72,12 @@ fun LoginForm() {
 
 fun checkCredentials(creds: Credentials, context: Context): Boolean {
     if (creds.isNotEmpty() && creds.login == "admin") {
-        Toast.makeText(context, "Correct Credentials", Toast.LENGTH_SHORT).show()
+//        Toast.makeText(context, "Correct Credentials", Toast.LENGTH_SHORT).show()
+        print("Correct")
         return true
     } else {
-        Toast.makeText(context, "Wrong Credentials", Toast.LENGTH_SHORT).show()
+//        Toast.makeText(context, "Wrong Credentials", Toast.LENGTH_SHORT).show()
+        print("Wrong")
         return false
     }
 }
